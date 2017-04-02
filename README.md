@@ -35,7 +35,7 @@ if you need html reports locally
 For running tests command `py.test` is used. To find out actual info about options and parameters, 
 just use `py.test --help`. Basically, the command for running tests looks like 
 ```
-    py.test <tests_path> -s --alluredir=output <opts> 
+    pytest <tests_path> -s --alluredir=output <opts> 
  
 ```
 where `tests_path` is like `tests/twitch` and `opts` are component-specific options.
@@ -56,7 +56,7 @@ All parameters can be filled  up in the [local] section in the `env.ini` filed
 * develop a test, put it to correct service
 * run test
 ```
-    py.test tests/api/twitch --twitch_api_url=http://api.greentech-vn.com -s --alluredir=output
+    pytest --api_url=http://api.greentech-vn.com tests/api/rewards/ --alluredir=output
 ```
 * generate report
 ```
