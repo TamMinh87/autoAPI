@@ -6,7 +6,7 @@ from config.config_reader import config_common, update_config_by_environment
 from libs.core.core.logger import logger_stream, setLogLevel
 
 option_list = (
-    'db_password', 'db_user', 'db_name', 'twitch_api_url'
+    'db_password', 'db_user', 'db_name', 'api_url'
 )
 
 

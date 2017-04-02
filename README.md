@@ -12,7 +12,7 @@
 ```    
 * activate virtualenv 
 ```
-    virtualenv .env
+    virtualenv -p python3.6 .env
     source .env/bin/activate
 ```
 * install requirements
